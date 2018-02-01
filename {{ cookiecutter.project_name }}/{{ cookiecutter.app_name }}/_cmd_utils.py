@@ -30,14 +30,14 @@ def which(program):
     fpath, _ = os.path.split(program)
     if fpath:
         if is_exe(program):
-            logger.debug("found executable: " + str(program))
+            logger.debug("Found executable: " + str(program))
             return program
     else:
         for path in os.environ["PATH"].split(os.pathsep):
             path = os.path.expandvars(os.path.expanduser(path)).strip('"')
             exe_file = os.path.join(path, program)
             if is_exe(exe_file):
-                logger.debug("found executable: " + str(exe_file))
+                logger.debug("Found executable: " + str(exe_file))
                 return exe_file
 
     return None
@@ -121,9 +121,9 @@ class ParallelRunner():
         pool = Pool(processes=self.concurrency)
         results = pool.starmap(self._run_single_cmd, self.cmds)
         if not all(results):
-            logger.error("There were errors in your commands. Please check the output and re-run the processing chain!")
+            logger.error("There were errors in your commands.")
             sys.exit(1)
-        logger.debug("all processes completed")
+        logger.debug("All processes completed")
         self.cmds = set()
 
     def num_commands(self):

@@ -4,17 +4,29 @@ A simple template for a Python package, based on my own preferences.
 
 ## Features
 
-- CLI entry points with basic options
-- Logging
-- Various command line utils
-- Setuptools
+Current features:
+
+- CLI entry points with basic options for verbose, force-overwrite, debug, and dry-run
+- Logging with nice output
+- A few command line utils including parallel command execution
+- Setuptools for simple installation
 - Basic test file
 
-Heavily influenced by: https://github.com/mdklatt/cookiecutter-python-app
+Not a feature (yet?):
+
+- Auto-generating documentation
+- Better structure for unit tests
+- `tqdm` support for parallel processing
+- YAML-based config
+- Automatic version bumping
 
 ## Requirements
 
 - [Cookiecutter](https://github.com/audreyr/cookiecutter)
+
+## Credits
+
+This project is heavily influenced by: https://github.com/mdklatt/cookiecutter-python-app
 
 ## License
 
