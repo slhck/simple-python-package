@@ -1,0 +1,4 @@
+## Python requirements for using the {{ cookiecutter.app_name }} application.
+##
+##    pip install --requirement=requirements.txt
+##

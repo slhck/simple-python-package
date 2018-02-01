@@ -1,0 +1,12 @@
+{
+    "project_name": "project_name",
+    "app_name": "app_name",
+    "app_name_class_case": "AppNameClassCase",
+    "cli_script": "cli_script",
+    "app_short_description": "App Short Description",
+    "author_name": "Werner Robitza",
+    "author_email": "werner.robitza@gmail.com",
+    "project_version": "0.0.1",
+    "copyright_year": "copyright_year",
+    "url": "url"
+}
