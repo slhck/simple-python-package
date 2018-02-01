@@ -20,9 +20,18 @@ Not a feature (yet?):
 - YAML-based config
 - Automatic version bumping
 
-## Requirements
+## Requirements & Installation
 
 - [Cookiecutter](https://github.com/audreyr/cookiecutter)
+- Python 3 (there is 2.7 support but I may drop it)
+
+Then:
+
+```
+cookiecutter simple-python-package
+```
+
+
 
 ## Credits
 
