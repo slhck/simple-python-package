@@ -59,8 +59,8 @@ def main():
 if __name__ == '__main__':
     try:
         status = main()
-    except:
-        logger.criticalr("Fatal error")
+    except Exception as e:
+        logger.critical("Fatal error")
         raise
     else:
         raise SystemExit(status)
